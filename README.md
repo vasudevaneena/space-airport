@@ -28,3 +28,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 Below are the screenshots for mobile and desktop screen.
 
 <img width="200" alt="InitialDesktopState" src="https://user-images.githubusercontent.com/66398574/90978339-881ee980-e590-11ea-899f-b248cd30aebe.PNG">
+<img width="200" alt="CapsulesLoaded" src="https://user-images.githubusercontent.com/66398574/90978368-cae0c180-e590-11ea-865e-71b6d25dfe5f.PNG">
+<img width="111" alt="InputValidations" src="https://user-images.githubusercontent.com/66398574/90978372-d03e0c00-e590-11ea-9d93-500fe4ed9913.PNG">
+<img width="200" alt="LandingPadLoaded" src="https://user-images.githubusercontent.com/66398574/90978375-d46a2980-e590-11ea-94c7-fa80dcb9374f.PNG">
+<img width="200" alt="MobileView" src="https://user-images.githubusercontent.com/66398574/90978376-d7651a00-e590-11ea-9d3b-e3e161a43593.PNG">
