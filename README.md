@@ -25,5 +25,6 @@ Runs the test cases for calculator
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Below are the screenshots for mobile and bigger screen.
+Below are the screenshots for mobile and desktop screen.
 
+<img width="200" alt="InitialDesktopState" src="https://user-images.githubusercontent.com/66398574/90978339-881ee980-e590-11ea-899f-b248cd30aebe.PNG">
