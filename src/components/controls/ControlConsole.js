@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./ControlConsole.scss";
-import Rocket from "../../assets/rocket.jpg";
+import Rocket from "../../assets/rocket.PNG";
 
 const ControlConsole = ({
   onCapuslesClick,
@@ -14,14 +14,14 @@ const ControlConsole = ({
     <>
      
         <div className="control-console">
-          <div className="row">
-            <div className="col-md-3">
+          <div className="row margin-row">
+            <div className="col-md-3 center-align">
               <button id="test-button-cap" onClick={onCapuslesClick}>Capsules</button>
             </div>
-            <div className="col-md-3 img-border">
+            <div className="col-md-3 img-border center-align">
               <img src={Rocket} alt="Rocket" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 center-align">
               <div className="row">
                 <div className="col-md-6">
                   <div>

@@ -1,7 +1,7 @@
 import reducer from "../redux/spaceReducer";
 import * as types from "../redux/actionTypesConstant";
 
-//testing reducer without mocking the data
+//testing reducer without mocking the API data
 describe("space reducer", () => {
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual({

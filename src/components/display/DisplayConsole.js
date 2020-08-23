@@ -40,12 +40,14 @@ const Container = () => {
     <>
       <div className="container">
         <div className="row mobile-view">
-          {apiData.data ? (
+          {apiData.data.length===0 ? (
+           <div className="col-md-12 display-console">
+          
+         </div>
+          ) : (
             <div className="col-md-12 display-console">
               <JSONPretty id="json-pretty" data={apiData.data}></JSONPretty>
             </div>
-          ) : (
-            ""
           )}
           <ControlConsole
             onCapuslesClick={capsulesCall}
