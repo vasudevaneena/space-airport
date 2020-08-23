@@ -29,6 +29,13 @@ describe("component rendering", () => {
   it("should render one <input>", () => {
     expect(wrapper.find("input")).toHaveLength(1);
   });
+  it("capsule button click",  () => {
+    wrapper = mount(<Provider store={store}><DisplayConsole /></Provider>);
+    wrapper.update();   
+    wrapper.find("#test-button-cap").simulate("click"); 
+    expect(wrapper.find(".display-console")).toHaveLength(1);
+  });
+ 
 
 });
 
