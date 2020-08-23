@@ -1,43 +1,30 @@
 @import "../../styles/config.scss";
 
 img {
- 
-    height: 130px;
+  height: 130px;
   //padding: 5px;
   margin-bottom: 110px;
   margin-top: 110px;
 }
 @media (min-width: 768px) {
-    img {
-        margin-top: 12px;
-  height: 98px;
-  margin-bottom: 0px;
-    }
+  img {
+    margin-top: 12px;
+    height: 98px;
+    margin-bottom: 0px;
   }
+}
 .control-console {
-  // display: none;
-  // height: 20vh;
- 
   border: 1px solid black;
-    width: 100%;
-//   height: 129vh;
-//   width: 30%;
-//   margin-top: 30px;
-//   margin-bottom: 20px;
-//   margin-left: 35px;
-//   border: 1px solid black;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .control-console {
-  
-
-   // height: 90%;
+    // height: 90%;
     width: 30%;
     margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 35px;
     border: 1px solid black;
-    
   }
 }
 button {
@@ -50,13 +37,12 @@ button {
   font-weight: 500;
 }
 @media (min-width: 768px) {
-    button {
-        height: 70px;
-        width: 110px;
-        font-size: 16px;
-    }
+  button {
+    height: 70px;
+    width: 110px;
+    font-size: 16px;
   }
-
+}
 
 input {
   margin-top: 30px;
@@ -65,13 +51,13 @@ input {
   border-radius: 1px;
   box-sizing: border-box;
   padding: 5px 5px 5px 8px;
-  width:65%;
+  width: 65%;
 }
 @media (min-width: 768px) {
-    input {
-     width:80%;
-    }
+  input {
+    width: 80%;
   }
+}
 .error {
   color: red;
   font-size: 12px;
@@ -83,7 +69,7 @@ input {
   border-left: 0px;
   border-right: 0px;
   width: 92%;
-   // display: block;
+  // display: block;
 }
 @media (min-width: 768px) {
   .img-border {
@@ -100,15 +86,15 @@ input {
   }
 }
 @media (max-width: 768px) {
-    .margin-row {
-      margin-left: 0px;
-    }
+  .margin-row {
+    margin-left: 0px;
   }
+}
 .center-align {
   text-align: center;
 }
 @media (max-width: 768px) {
-    .center-align {
-      margin-top: 50px;
-    }
+  .center-align {
+    margin-top: 50px;
   }
+}

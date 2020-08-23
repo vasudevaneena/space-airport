@@ -13,13 +13,6 @@ beforeEach(() => {
   wrapper = mount(<Provider store={store}><DisplayConsole /></Provider>);
 });
 
-// describe("Container snapshot", () => {
-//   test("matches snapshot", () => {
-   
-//     expect(wrapper).toMatchSnapshot();
-//   });
-// });
-
 describe("component rendering", () => {
   it("should render one <DisplayConsole>", () => {
     expect(wrapper.find(".display-console")).toHaveLength(1);
@@ -39,29 +32,5 @@ describe("component rendering", () => {
 
 });
 
-// describe("Control console", () => {
-//   wrapper = mount(<Provider store={store}><Container /></Provider>);
-//   wrapper.update();
-//   it("capsule button click",  () => {
-//     wrapper.find("#test-button-cap").simulate("click");   
-//     expect(wrapper.find("JSONPretty")).toHaveLength(1);
-//   });
-//   it("Landing Pad button click",  () => {
-//     wrapper.find("#test-button-land").simulate("click");   
-//     expect(wrapper.find("JSONPretty")).toHaveLength(1);
-//   });
-  
-//   it("invalid characters in input", () => {
-//     wrapper = mount(<Provider store={store}><Container /></Provider>);
-//    // wrapper.instance().forceUpdate();
-//     wrapper.update();
-//     wrapper
-//       .find("#test-input")
-//       .simulate("change", { target: { value: "&%" } });
-    
-//     //expect(wrapper.state("test-input")).toEqual("&%");
-//     expect(wrapper.find(".error")).toHaveLength(1);
-//   });
-// });
 
 
