@@ -1,0 +1,17 @@
+@import "../../styles/config.scss";
+.display-console{
+    margin-top:30px;
+    margin-bottom:20px;
+    height: 90vh;
+    border: 1px solid $color-border;
+    overflow-y: scroll;
+    background-color: $color-background;
+    width:60%;
+}
+@media (min-width: 768px) {
+    .display-console {        
+       width:100%;
+       height: 65vh;
+    }
+  }
+
