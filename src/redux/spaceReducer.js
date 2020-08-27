@@ -27,7 +27,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         data: [],
         error: action.payload,
-        history: state.history.concat({ data: action.payload })
+        history: state.history.concat({error: action.payload})
       };
     case FETCH_LANDING_PAD_SUCCESS:
       return {
@@ -41,7 +41,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         data: [],
         error: action.payload,
-        history: state.history.concat({ data: action.payload })
+        history: state.history.concat({error: action.payload})
       };
     default:
       return newState;
