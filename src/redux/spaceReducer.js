@@ -1,52 +1,50 @@
 import {
-  FETCH_CAPSULES_REQUEST,
   FETCH_CAPSULES_SUCCESS,
   FETCH_CAPSULES_FAILURE,
   FETCH_LANDING_PAD_SUCCESS,
-  FETCH_LANDING_PAD_FAILURE
+  FETCH_LANDING_PAD_FAILURE,
 } from "./actionTypesConstant";
 
 const initialState = {
   loading: false,
   data: [],
-  error: ""
+  error: "",
+  history: [],
 };
 
-const reducer = (state = initialState, action) => {
-  console.log('inside reducer',action.type)
-  console.log('payload',action.payload)
+const reducer = (state = initialState, action) => { 
+  const newState = { ...state };
   switch (action.type) {
-    case FETCH_CAPSULES_REQUEST:
-      return {
-        ...state,
-        loading: true
-      };
     case FETCH_CAPSULES_SUCCESS:
       return {
-        loading: false,
+        ...state,
         error: "",
-        data: action.payload
+        data: action.payload,
+        history: state.history.concat({ data: action.payload })
       };
     case FETCH_CAPSULES_FAILURE:
       return {
-        loading: false,
+        ...state,
         data: [],
-        error: action.payload
+        error: action.payload,
+        history: state.history.concat({ data: action.payload })
       };
-      case FETCH_LANDING_PAD_SUCCESS:
-        return {
-          loading: false,
-          error: "",
-          data: action.payload
-        };
-      case FETCH_LANDING_PAD_FAILURE:
-        return {
-          loading: false,
-          data: [],
-          error: action.payload
-        };
+    case FETCH_LANDING_PAD_SUCCESS:
+      return {
+        ...state,
+        error: "",
+        data: action.payload,
+        history: state.history.concat({ data: action.payload })
+      };
+    case FETCH_LANDING_PAD_FAILURE:
+      return {
+        ...state,
+        data: [],
+        error: action.payload,
+        history: state.history.concat({ data: action.payload })
+      };
     default:
-      return state;
+      return newState;
   }
 };
 
