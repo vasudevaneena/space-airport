@@ -14,6 +14,8 @@ const initialState = {
 
 const reducer = (state = initialState, action) => { 
   const newState = { ...state };
+  console.log('newState', newState)
+  console.log('state',state)
   switch (action.type) {
     case FETCH_CAPSULES_SUCCESS:
       return {
@@ -41,7 +43,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         data: [],
         error: action.payload,
-        history: state.history.concat({error: action.payload})
+        history: state.history.concat({ error: action.payload})
       };
     default:
       return newState;

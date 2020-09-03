@@ -8,7 +8,9 @@ import { fetchCapsules, fetchLandingPad } from "../../redux/spaceAction";
 
 const Container = () => {
   let { apiData } = useSelector((state) => ({
+    
     apiData: state.data,
+    
   }));
   const [errorMessage, setErrorMessage] = useState();
   const [valid, setValid] = useState(true);
@@ -40,11 +42,12 @@ const Container = () => {
     <>
       <div className="container">
         <div className="row mobile-view">
-          {apiData.data.length === 0 ? (
+          {
+          apiData.length === 0 ? (
             <div className="col-md-12 display-console"></div>
           ) : (
             <div className="col-md-12 display-console">
-              <JSONPretty id="json-pretty" data={apiData.data}></JSONPretty>
+              <JSONPretty id="json-pretty" data={apiData}></JSONPretty>
             </div>
           )}
           <ControlConsole
