@@ -18,7 +18,7 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Runs the test cases for calculator
+Runs the test cases
 
 ### `npm run build`
 
